@@ -1,7 +1,6 @@
 package extend.practice;
 
 public class Slime extends Monster {
-	int damage ;
 
 	public Slime(String name) {
 		this.name = name;
@@ -11,6 +10,7 @@ public class Slime extends Monster {
 	}
 
 	public void attack(Living target) {
+		int damage;
 		damage = offensive * Rand.get(10);
 		System.out.println(name + "が体当たりで攻撃！" + target.name + "に" + damage + "のダメージを与えた。");
 		System.out.println("");

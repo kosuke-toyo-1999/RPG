@@ -1,7 +1,6 @@
 package extend.practice;
 
 public class Wizard extends Human {
-	int damage ;
 
 	public Wizard(String name) {
 		this.name = name;
@@ -11,8 +10,8 @@ public class Wizard extends Human {
 	}
 
 	public void attack(Living target) {
+		int damage;
 		damage = offensive * Rand.get(10);
-		System.out.println(damage);
 		System.out.println(name + "が魔法で攻撃！" + target.name + "に" + damage + "のダメージを与えた。");
 		System.out.println("");
 		target.hp = target.hp - damage;

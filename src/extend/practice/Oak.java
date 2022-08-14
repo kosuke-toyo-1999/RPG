@@ -1,7 +1,6 @@
 package extend.practice;
 
 public class Oak extends Monster {
-	int damage ;
 
 	public Oak(String name) {
 		this.name = name;
@@ -11,6 +10,7 @@ public class Oak extends Monster {
 	}
 
 	public void attack(Living target) {
+		int damage;
 		damage = offensive * Rand.get(10);
 		System.out.println(name + "が槍で攻撃！" + target.name + "に" + damage + "のダメージを与えた。");
 		System.out.println("");
